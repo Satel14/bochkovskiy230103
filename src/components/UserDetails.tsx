@@ -5,7 +5,7 @@ interface Props {
   onClose: () => void;
 }
 
-export default function UserWidget({ user, onClose }: Props): JSX.Element {
+export default function UserDetails({ user, onClose }: Props): JSX.Element {
   return (
     <div className="modal-wrapper" onClick={onClose}>
       <div className="modal" onClick={(e) => e.stopPropagation()}>
