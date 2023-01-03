@@ -1,0 +1,110 @@
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-wrapper .modal {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: white;
+}
+
+@media screen and (max-width: 30rem) {
+  .modal-wrapper .modal {
+    width: 100%;
+  }
+}
+
+.modal-wrapper .modal .close-icon {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+}
+
+.modal-wrapper .modal .top-block {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgb(217, 217, 217);
+  align-items: center;
+  padding: 2rem;
+}
+
+.modal-wrapper .modal .top-block .avatar {
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 0.75rem;
+  object-fit: cover;
+}
+
+.modal-wrapper .modal .top-block .title,
+.modal-wrapper .modal .top-block .subtitle {
+  text-align: center;
+  margin-bottom: 0.25rem;
+}
+
+.modal-wrapper .modal .top-block .title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(6, 6, 6);
+  text-align: center;
+}
+
+.modal-wrapper .modal .top-block .subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgb(143, 143, 143);
+  text-align: center;
+}
+
+.modal-wrapper .modal .bottom-block {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  align-items: stretch;
+  gap: 1.5rem;
+}
+
+.modal-wrapper .modal .bottom-block .info-block {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.modal-wrapper .modal .bottom-block .info-block .info-label {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(6, 6, 6);
+  width: 5rem;
+}
+
+.modal-wrapper .modal .bottom-block .info-block .info-value,
+.modal-wrapper .modal .bottom-block .info-block .info-link {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.modal-wrapper .modal .bottom-block .info-block .info-value {
+  color: rgb(6, 6, 6);
+}
+
+.modal-wrapper .modal .bottom-block .send-message-button {
+  border-radius: 0.5rem;
+  color: white;
+  background-color: rgb(71, 71, 252);
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 2rem;
+}

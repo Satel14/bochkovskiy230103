@@ -1,38 +1,70 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.users-list {
   display: flex;
   flex-direction: column;
+  align-self: stretch;
+  margin: 0.5rem;
+  min-width: 470px;
+  align-self: center;
+}
+
+@media screen and (max-width: 480px) {
+  .users-list {
+    min-width: unset;
+    align-self: stretch;
+  }
+}
+
+.users-list .user-card {
+  display: flex;
+  padding: 1rem;
+  border-bottom: 1px solid rgb(208, 208, 208);
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.users-list .user-card .avatar {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+  object-fit: cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.users-list .user-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 0.5rem;
 }
+
+.users-list .user-card .user-info .title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: black;
+}
+
+.users-list .user-card .user-info .subtitle {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: rgb(90, 90, 90);
+}
+
+.users-list .user-card .view-button {
+  padding: 0.5rem;
+  border: 1px solid rgb(205, 205, 205);
+  color: rgb(34, 34, 34);
+  background-color: transparent;
+  border-radius: 0.5rem;
+}
+
+.users-list .view-all-button {
+  padding: 1rem;
+  border: 1px solid rgb(113, 113, 113);
+  color: black;
+  background-color: transparent;
+  border-radius: 0.5rem;
+  margin: 2rem;
+}
+
